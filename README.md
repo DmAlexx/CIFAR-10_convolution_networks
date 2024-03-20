@@ -10,7 +10,7 @@ Questions
    
 3. Make one modification (that you think can help) and train the classifier again. Does the accuracy improve?
    - I decided to use AlexNET as default and adapted it for my needs. I had new problem, validation accuracy was
-   - sgnificantly behind train accuracy, that could indicate about retraining model (model is to comlex for 50000 images)
+   - sgnificantly behind train accuracy, that could indicate about overfitting (model is too comlex for 50000 images)
    - so I used dropout to decide this problem. I tried to solve task with empirical method and I configured model every time after
    - training (more layers, dropouts, neurons, ets.).
    - When time for training had become significant, change model to take result was harder and harder, sometime result was worse than I had before.
