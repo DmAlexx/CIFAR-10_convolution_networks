@@ -3,12 +3,12 @@ Questions
 - Train Acc      0.9426222443580627
 - Validation Acc 0.8515999913215637
     
-3. What modifications would you do in order to improve the classification accuracy?
-   - at first, I used the same network we used in the lesson for the MNIST problem, but it was with low accuracy,
-   - with increasing numbers of neurons, accuracy some increase too
-   - I compiled a lot of times with different combination of neurons numbers? but it didn't have enough effect.
+2. What modifications would you do in order to improve the classification accuracy?
+   - at first, I used the same network we use in the lesson for the MNIST problem, but it was with low accuracy,
+   - increasing numbers of kernels, accuracy some increase too
+   - I compiled a lot of times with different combination of filters numbers, but it didn't have enough effect.
    
-5. Make one modification (that you think can help) and train the classifier again. Does the accuracy improve?
+3. Make one modification (that you think can help) and train the classifier again. Does the accuracy improve?
    - I decided to use AlexNET as default and adapted it for my needs. I had new problem, validation accuracy was
    - sgnificantly behind train accuracy, that could indicate about retraining model (model is to comlex for 50000 images)
    - so I used dropout to decide this problem. I tried to solve task with empirical method and I configured model every time after
